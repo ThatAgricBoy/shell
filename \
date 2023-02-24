@@ -1,0 +1,21 @@
+#include "main.h"
+
+int main(int ac, char **argv)
+{
+	char *prompt = "(Myshell) $ ";
+	char *lineptr;
+	size_t n = 0;
+
+	/* declaring void variables */
+	(void)ac; (void)argv;
+	
+	while(1)
+	{
+	printf("%s", prompt);
+	getline(&lineptr, &n, stdin);
+	printf("%s\n", linept);
+
+	free(lineptr);
+	}
+	return (0);
+}
